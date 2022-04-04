@@ -1,0 +1,56 @@
+.slider-height{
+    background-image: url("../../Images/xh1_hero.png.pagespeed.ic.TGLpf330DH.webp");
+    min-height: 1080px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.hero-caption span {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: rgb(255, 86, 0);
+    margin-bottom: 44px;
+    display: inline-block;
+}
+.hero-caption h1 {
+    font-size: 87px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 51px;
+}
+.hero-btn {
+    padding: 30px 43px;
+}
+.btn {
+background: rgb(255, 86, 0);
+padding: 27px 44px;
+color: rgb(255, 255, 255);
+display: inline-block;
+font-size: 16px;
+border-radius: 6px;
+font-weight: 400;
+letter-spacing: 1px;
+line-height: 0;
+cursor: pointer;
+transition: color 0.4s linear 0s;
+position: relative;
+z-index: 1;
+border: 0px;
+overflow: hidden;
+margin: 0px;
+}
+.hero-caption p {
+    margin-bottom: 30px;
+    padding-right: 257px;
+    color: rgb(33, 32, 37);
+    overflow: hidden;
+}
+p {
+    font-family: Poppins, sans-serif;
+    color: rgb(16, 40, 93);
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}

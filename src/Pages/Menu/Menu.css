@@ -1,0 +1,24 @@
+.menu-top{
+    background-image: url(../../Images/section_bg01.png.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.section-title{
+    margin-top: 40px;
+}
+.nav .nav-item{
+    text-decoration: none;
+    margin: 0 27px;
+    color: #1b1b1b;
+    font-size: 16px;
+}
+.active{
+    background: #ff5600;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 22px;
+}
+.single-gallery img{
+    /* height: 100px; */
+}
