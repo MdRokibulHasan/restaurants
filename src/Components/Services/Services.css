@@ -1,0 +1,29 @@
+.section-padding30 {
+    padding-top: 195px;
+    padding-bottom: 140px;
+}
+.mb-70 {
+    margin-bottom: 70px;
+}
+.our-services .single-services {
+    padding: 79px 23px;
+    box-shadow: 0 10px 30px 0 rgb(133 66 189 / 10%);
+
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.our-services .single-services .services-ion span {
+    font-size: 60px;
+    margin-bottom: 13px;
+    color: #000;
+    margin-bottom: 16px;
+    display: block;
+}
+.our-services .single-services .services-cap {
+    padding: 0 16px;
+}
+.services-ion img {
+    height: 80px;
+    margin: 20px;
+}

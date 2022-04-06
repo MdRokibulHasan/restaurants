@@ -7,18 +7,29 @@
 .section-title{
     margin-top: 40px;
 }
-.nav .nav-item{
+.nav .nav-item a{
     text-decoration: none;
     margin: 0 27px;
     color: #1b1b1b;
     font-size: 16px;
 }
-.active{
+/* .active{
     background: #ff5600;
     color: #fff;
     font-size: 16px;
     padding: 5px 22px;
+} */
+
+.properties-button .nav{
+    justify-content: center;
 }
-.single-gallery img{
-    /* height: 100px; */
+.container-fluid{
+margin:50px 0;
+}
+.no-gutter{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.container .row{
+    --bs-gutter-x:0 !important
 }

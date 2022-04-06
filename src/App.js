@@ -6,6 +6,9 @@ import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
 import AuthProvider from "./Components/Context/AuthProvider";
 import Navbar from "./Components/Share/Navbar/Navbar";
+import About from "./Pages/About/About";
+import Footer from "./Pages/Foooter/Footer";
+import Menu from "./Pages/Menu/Menu";
 function App() {
   return (
     <div>
@@ -16,7 +19,10 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Register />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/menu" element={<Menu />} />
         </Routes>
+        <Footer />
       </AuthProvider>
     </div>
   );

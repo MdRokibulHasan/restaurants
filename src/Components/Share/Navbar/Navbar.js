@@ -2,15 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth.";
 import "./Navbar.css";
+import Logo from "../../../Images/download.webp";
 const Navbar = () => {
   const { user, logOut } = useAuth();
   return (
-    <div>
+    <div className="main-header">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          {/* <a className="navbar-brand" href="#">
-            Navbar
-          </a> */}
+          <div className="logo">
+            <Link className="navbar-brand" to="/">
+              <img src={Logo} alt="Logo Image" />
+            </Link>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -30,12 +33,12 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to={"/home"} className="nav-link">
+                <Link to={"/about"} className="nav-link">
                   About
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to={" "} className="nav-link">
+                <Link to={"/menu "} className="nav-link">
                   Menu
                 </Link>
               </li>
@@ -60,17 +63,12 @@ const Navbar = () => {
                   </Link>
                 )}
               </li>
-              {/* <li className="nav-item">
-                <Link to={"/login"} className="nav-link">
-                  Login
-                </Link>
-              </li> */}
             </ul>
-          </div>
-          <div>
-            <button type="button" className="appointment-btn">
-              Order Now
-            </button>
+            <div>
+              <button type="button" className="appointment-btn">
+                Order Now
+              </button>
+            </div>
           </div>
         </div>
       </nav>
