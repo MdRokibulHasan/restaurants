@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./ShowMenu.css";
 const ShowMenu = () => {
   const [items, setItems] = useState([]);
+  const history = useNavigate();
   useEffect(() => {
-    fetch("output (1).json")
+    fetch("http://localhost:5000/products")
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);
@@ -14,6 +15,11 @@ const ShowMenu = () => {
       return curentElem.category === categItem;
     });
     setItems(updatedItems);
+  };
+  const handleDetails = (_id) => {
+    const uri = `/food/${_id}`;
+
+    history(uri);
   };
   return (
     <>
@@ -39,7 +45,7 @@ const ShowMenu = () => {
           <div className="col-11 mx-auto">
             <div className="row">
               {items.map((element) => {
-                const { id, name, image, description, price } = element;
+                const { _id, name, image, description, price, rating } = element;
                 return (
                   <div className="col-12 col-md-4 col-lg-4">
                     <div class="card m-5">
@@ -50,7 +56,7 @@ const ShowMenu = () => {
                             <h5 class="card-title text-uppercase">{name}</h5>
                           </div>
                           <div className="rating">
-                            <p>(4.5)</p>
+                            <p>({rating})</p>
                           </div>
                         </div>
                         <p class="card-text">{description}</p>
@@ -59,9 +65,9 @@ const ShowMenu = () => {
                             <p class="card-text">Price: {price} tk</p>
                           </div>
                           <div className="food-btn">
-                            <Link to={`/food/${id}`}>
-                              <button className="btn">Order Now</button>
-                            </Link>
+                            <button onClick={() => handleDetails(_id)} className="btn">
+                              Order Now
+                            </button>
                           </div>
                         </div>
                       </div>

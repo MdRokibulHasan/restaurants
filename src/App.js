@@ -26,7 +26,14 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/showmenu" element={<ShowMenu />} />
-          <Route path="/food/:id" element={<MenuDetails />} />
+          <Route
+            path="/food/:id"
+            element={
+              <PrivateRoute>
+                <MenuDetails />
+              </PrivateRoute>
+            }
+          />
           <Route path="dashboard" element={<Dashborad />}></Route>
         </Routes>
         <Footer />

@@ -1,9 +1,9 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDMvrvJN4gNT8tMgx0vm2nUUutcnIFpLLA",
-  authDomain: "food-app-f33ca.firebaseapp.com",
-  projectId: "food-app-f33ca",
-  storageBucket: "food-app-f33ca.appspot.com",
-  messagingSenderId: "500425357345",
-  appId: "1:500425357345:web:e25e9ffd9ec2f53a1b0b60",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 export default firebaseConfig;
