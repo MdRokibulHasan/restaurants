@@ -13,6 +13,7 @@ import ShowMenu from "./Components/ShowMenu/ShowMenu";
 import MenuDetails from "./Components/MenuDetails/MenuDetails";
 import Dashborad from "./Pages/Dashborad/Dashborad";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import UserOrder from "./Components/UserOrder/UserOrder";
 function App() {
   return (
     <div>
@@ -35,6 +36,7 @@ function App() {
             }
           />
           <Route path="dashboard" element={<Dashborad />}></Route>
+          <Route path="userorder" element={<UserOrder />}></Route>
         </Routes>
         <Footer />
       </AuthProvider>

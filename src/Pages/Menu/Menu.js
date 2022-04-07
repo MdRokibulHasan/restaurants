@@ -20,30 +20,6 @@ const Menu = () => {
         </div>
         <div className="row justify-content-center">
           <div className="properties-button">
-            {/* <nav>
-              <ul className="nav nav-pills">
-                <li className="nav-item">
-                  <a className="nav-link" data-toggle="tab" aria-current="page" href="#special">
-                    Special
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" data-toggle="tab" href="#lunch">
-                    Lunch
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" data-toggle="tab" href="#brakefirst">
-                    Brakefirst
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" data-toggle="tab" href="#dinner">
-                    Dinner
-                  </a>
-                </li>
-              </ul>
-            </nav> */}
             <div className=" container">
               <div className="tab-pane" id="dinner">
                 <div className="row">

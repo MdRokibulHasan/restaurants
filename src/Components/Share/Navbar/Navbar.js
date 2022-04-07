@@ -52,6 +52,7 @@ const Navbar = () => {
                   Contact
                 </Link>
               </li>
+              <li className="nav-item">{user?.email && <Link to="/userorder">My Order</Link>}</li>
               <li className="nav-item">
                 {user?.email ? (
                   <button onClick={logOut} className="appointment-btn">
