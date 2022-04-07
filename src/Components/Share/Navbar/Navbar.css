@@ -20,10 +20,12 @@
     
   }
   
-  .nav-item a:hover,
-  :active {
-    color: #88c250 !important;
-    border-bottom: #88c250;
+  .nav-item a:hover {
+    color: #ff5600 !important;
+   
+  }
+  .nav-item a:active{
+    border-bottom: #ff5600;
   }
   
   .appointment-btn {

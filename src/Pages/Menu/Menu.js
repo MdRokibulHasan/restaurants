@@ -4,6 +4,7 @@ import "./Menu.css";
 import FoodImg from "../../Images/gallery1.png.webp";
 import FoodImg1 from "../../Images/gallery2.png.webp";
 import FoodImg2 from "../../Images/gallery3.png.webp";
+import FoodImg3 from "../../Images/gallery4.png.webp";
 
 const Menu = () => {
   return (
@@ -19,7 +20,7 @@ const Menu = () => {
         </div>
         <div className="row justify-content-center">
           <div className="properties-button">
-            <nav>
+            {/* <nav>
               <ul className="nav nav-pills">
                 <li className="nav-item">
                   <a className="nav-link" data-toggle="tab" aria-current="page" href="#special">
@@ -42,116 +43,8 @@ const Menu = () => {
                   </a>
                 </li>
               </ul>
-            </nav>
-            <div className="tab-content container">
-              <div className="tab-pane active" id="special">
-                <div className=" row ">
-                  <div className="col-lg-5 col-md-6 col-sm-6">
-                    <div className="gallery-box">
-                      <div className="single-gallery">
-                        <img src={FoodImg} alt="Image" className="img-fluid" style={{ height: "509px" }}></img>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-6">
-                    <div className="gallery-box">
-                      <div className="single-gallery">
-                        <img src={FoodImg1} alt="Image" className="img-fluid" style={{ height: "509px", width: "100%" }}></img>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6">
-                    <div className="row">
-                      <div className="col-lg-12 col-md-6 col-sm-6">
-                        <div className="gallery-box">
-                          <div className="single-gallery">
-                            <img src={FoodImg} alt="Image" className="img-fluid"></img>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-12 col-md-6 col-sm-6">
-                        <div className="gallery-box">
-                          <div className="single-gallery">
-                            <img src={FoodImg2} alt="Image" className="img-fluid"></img>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="tab-pane" id="lunch">
-                <div className="row ">
-                  <div className="col-lg-5 col-md-6 col-sm-6">
-                    <div className="gallery-box">
-                      <div className="single-gallery">
-                        <img src={FoodImg1} alt="Image" className="img-fluid" style={{ height: "509px" }}></img>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-6">
-                    <div className="gallery-box">
-                      <div className="single-gallery">
-                        <img src={FoodImg} alt="Image" className="img-fluid" style={{ height: "509px" }}></img>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 ">
-                    <div className="row  ">
-                      <div className="col-lg-12 col-md-6 col-sm-6 ">
-                        <div className="gallery-box">
-                          <div className="single-gallery">
-                            <img src={FoodImg2} alt="Image" className="img-fluid"></img>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-12 col-md-6 col-sm-6">
-                        <div className="gallery-box">
-                          <div className="single-gallery">
-                            <img src={FoodImg} alt="Image" className="img-fluid"></img>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="tab-pane" id="brakefirst">
-                <div className="row ">
-                  <div className="col-lg-5 col-md-6 col-sm-6 ">
-                    <div className="gallery-box">
-                      <div className="single-gallery">
-                        <img src={FoodImg1} alt="Image" className="img-fluid" style={{ height: "509px" }}></img>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-6 ">
-                    <div className="gallery-box">
-                      <div className="single-gallery">
-                        <img src={FoodImg2} alt="Image" className="img-fluid" style={{ height: "509px" }}></img>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 ">
-                    <div className="row ">
-                      <div className="col-lg-12 col-md-6 col-sm-6 ">
-                        <div className="gallery-box">
-                          <div className="single-gallery">
-                            <img src={FoodImg} alt="Image" className="img-fluid"></img>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-12 col-md-6 col-sm-6">
-                        <div className="gallery-box">
-                          <div className="single-gallery">
-                            <img src={FoodImg1} alt="Image" className="img-fluid"></img>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </nav> */}
+            <div className=" container">
               <div className="tab-pane" id="dinner">
                 <div className="row">
                   <div className="col-lg-5 col-md-6 col-sm-6">
@@ -164,7 +57,7 @@ const Menu = () => {
                   <div className="col-lg-4 col-md-6 col-sm-6">
                     <div className="gallery-box">
                       <div className="single-gallery">
-                        <img src={FoodImg} alt="Image" className="img-fluid" style={{ height: "509px" }}></img>
+                        <img src={FoodImg1} alt="Image" className=" img-fluid" style={{ height: "509px", width: "100%" }}></img>
                       </div>
                     </div>
                   </div>
@@ -173,14 +66,14 @@ const Menu = () => {
                       <div className="col-lg-12 col-md-6 col-sm-6">
                         <div className="gallery-box">
                           <div className="single-gallery">
-                            <img src={FoodImg} alt="Image" className="img-fluid"></img>
+                            <img src={FoodImg2} alt="Image" className="img-fluid" style={{ height: "254px" }}></img>
                           </div>
                         </div>
                       </div>
                       <div className="col-lg-12 col-md-6 col-sm-6">
                         <div className="gallery-box">
                           <div className="single-gallery">
-                            <img src={FoodImg} alt="Image" className="img-fluid"></img>
+                            <img src={FoodImg3} alt="Image" className="img-fluid" style={{ height: "255px" }}></img>
                           </div>
                         </div>
                       </div>

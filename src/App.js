@@ -9,6 +9,10 @@ import Navbar from "./Components/Share/Navbar/Navbar";
 import About from "./Pages/About/About";
 import Footer from "./Pages/Foooter/Footer";
 import Menu from "./Pages/Menu/Menu";
+import ShowMenu from "./Components/ShowMenu/ShowMenu";
+import MenuDetails from "./Components/MenuDetails/MenuDetails";
+import Dashborad from "./Pages/Dashborad/Dashborad";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 function App() {
   return (
     <div>
@@ -21,6 +25,9 @@ function App() {
           <Route path="/signup" element={<Register />} />
           <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/showmenu" element={<ShowMenu />} />
+          <Route path="/food/:id" element={<MenuDetails />} />
+          <Route path="dashboard" element={<Dashborad />}></Route>
         </Routes>
         <Footer />
       </AuthProvider>

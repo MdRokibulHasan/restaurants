@@ -38,7 +38,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to={"/menu "} className="nav-link">
+                <Link to={"/showmenu "} className="nav-link">
                   Menu
                 </Link>
               </li>
@@ -65,9 +65,11 @@ const Navbar = () => {
               </li>
             </ul>
             <div>
-              <button type="button" className="appointment-btn">
-                Order Now
-              </button>
+              <Link to={"/showmenu"}>
+                <button type="button" className="appointment-btn">
+                  Order Now
+                </button>
+              </Link>
             </div>
           </div>
         </div>

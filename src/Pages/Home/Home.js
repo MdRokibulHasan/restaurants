@@ -4,6 +4,7 @@ import Services from "../../Components/Services/Services";
 import Navbar from "../../Components/Share/Navbar/Navbar";
 import TopBanner from "../../Components/TopBanner/TopBanner";
 import About from "../About/About";
+import Blogs from "../Blogs/Blogs";
 import BookNow from "../BookNow/BookNow";
 import Menu from "../Menu/Menu";
 
@@ -17,6 +18,7 @@ const Home = () => {
       <About />
       <BookNow />
       <Services />
+      <Blogs />
     </div>
   );
 };

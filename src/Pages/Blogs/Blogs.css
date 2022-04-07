@@ -1,0 +1,40 @@
+.blogs-area .section-padding30{
+    padding-top: 195px;
+    padding-bottom: 140px;
+}
+.blogs-area .single-blogs {
+    position: relative;
+}
+.blogs-area .single-blogs .blog-cap {
+    padding: 29px 20px 20px 31px;
+    background: #f7f9f8;
+    position: absolute;
+    bottom: -63px;
+    right: 0;
+    width: 94%;
+    border-radius: 5px;
+}
+.blogs-area .single-blogs .blog-cap span {
+    color: #828fa3;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.blogs-area .single-blogs .blog-cap h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #212025;
+}
+.blogs-area .single-blogs .blog-cap h4 a {
+    font-weight: 700;
+    line-height: 1.4;
+    text-decoration: none;
+    color: black;
+}
+.single-blogs .blog-cap:hover{
+    background-color: #ff5600;
+    color: #fff !important;
+}
