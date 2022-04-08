@@ -14,6 +14,7 @@ import MenuDetails from "./Components/MenuDetails/MenuDetails";
 import Dashborad from "./Pages/Dashborad/Dashborad";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import UserOrder from "./Components/UserOrder/UserOrder";
+import Contact from "./Pages/Contact/Contact";
 function App() {
   return (
     <div>
@@ -37,6 +38,7 @@ function App() {
           />
           <Route path="dashboard" element={<Dashborad />}></Route>
           <Route path="userorder" element={<UserOrder />}></Route>
+          <Route path="contact" element={<Contact />}></Route>
         </Routes>
         <Footer />
       </AuthProvider>

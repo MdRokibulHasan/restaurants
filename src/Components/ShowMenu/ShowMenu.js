@@ -7,7 +7,7 @@ const ShowMenu = () => {
 
   const history = useNavigate();
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://agile-cove-20388.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => {
         setItems(data);

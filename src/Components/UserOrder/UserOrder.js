@@ -4,7 +4,7 @@ import OrderDisplay from "./OrderDisplay";
 const UserOrder = () => {
   const [order, setOrder] = useState();
   useEffect(() => {
-    fetch("http://localhost:5000/order")
+    fetch("https://agile-cove-20388.herokuapp.com/order")
       .then((res) => res.json())
       .then((data) => setOrder(data));
   }, []);

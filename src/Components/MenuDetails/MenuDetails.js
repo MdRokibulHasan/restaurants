@@ -17,7 +17,7 @@ const MenuDetails = () => {
   });
   useEffect(
     () =>
-      fetch("http://localhost:5000/products")
+      fetch("https://agile-cove-20388.herokuapp.com/products")
         .then((res) => res.json())
         .then((data) => {
           setDetails(data);
@@ -32,17 +32,24 @@ const MenuDetails = () => {
     }
   }, [details]);
   // order post server
-  const { name, price } = specificDetail;
+  // console.log(specificDetail);
+  // const { name, price } = specificDetail[0];
+  // console.log(specificDetail);
+
   function submit(e) {
     e.preventDefault();
     const payload = {
-      address: data.address,
-      phone: data.phone,
-      quantity: data.quantity,
-      price: specificDetail.price,
-      name: specificDetail.name,
+      // address: data.address,
+      // phone: data.phone,
+      // quantity: data.quantity,
+      // price: specificDetail.price,
+      // name: specificDetail.name,
+      ...data,
+      name: specificDetail[0].name,
+      price: specificDetail[0].price,
     };
-    Http.post("order", { ...payload, ...{ name, price } }).then((res) => {
+    console.log(payload);
+    Http.post("order", payload).then((res) => {
       console.log(res.data);
       e.target.value = "";
     });

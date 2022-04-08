@@ -2,7 +2,7 @@ import Axios from "axios";
 
 class Http {
   constructor() {
-    this.URL = "http://localhost:5000/";
+    this.URL = "https://agile-cove-20388.herokuapp.com/";
   }
   async post(URL = null, body = null) {
     Axios.post(this.URL + URL, body).then((res) => {

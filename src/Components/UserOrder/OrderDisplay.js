@@ -4,7 +4,7 @@ const OrderDisplay = (props) => {
   const [order, setOrder] = useState();
   const { index, _id, name, price, phone, address, quantity } = props.iteam;
   useEffect(() => {
-    fetch("http://localhost:5000/order")
+    fetch("https://agile-cove-20388.herokuapp.com/order")
       .then((res) => res.json())
       .then((data) => setOrder(data));
   }, []);
@@ -13,7 +13,7 @@ const OrderDisplay = (props) => {
     // console.log(id);
     const confirmation = window.confirm("Are you sure to Delete!!");
     if (confirmation) {
-      const url = `http://localhost:5000/order/${id}`;
+      const url = `https://agile-cove-20388.herokuapp.com/order/${id}`;
       fetch(url, {
         method: "delete",
       })
