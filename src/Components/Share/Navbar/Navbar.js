@@ -9,11 +9,6 @@ const Navbar = () => {
     <div className="main-header">
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
-          <div className="logo">
-            <Link className="navbar-brand" to="/">
-              <img src={Logo} alt="Logo Image" />
-            </Link>
-          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -25,7 +20,13 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="collapse navbar-collapse container" id="navbarNav">
+            <div className="logo">
+              {" "}
+              <Link className="navbar-brand" to="/">
+                <img src={Logo} alt="Logo Image" />
+              </Link>
+            </div>
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link to={"/home "} className="nav-link">
