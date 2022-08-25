@@ -11,17 +11,17 @@ const HomeAbout = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12">
-            <div className="about-caption">
-              <div className="section-title">
+            <div className="about-caption-home">
+              <div className="section-title-home">
                 <span>Discover Your Test</span>
                 <h2>We Provider Good Food For Your Family!</h2>
               </div>
-              <p>
+              <p className="about-body">
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat is aute
                 irure.
               </p>
             </div>
-            <div className="row">
+            <div className="row about-single-caption">
               <div className="col-lg-6 col-md-6 col-sm-6 col-xs-10">
                 <div className="single-caption">
                   <div className="caption-icon">
