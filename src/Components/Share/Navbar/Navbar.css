@@ -30,7 +30,7 @@
   
   .appointment-btn {
     border: 1px solid gray;
-    color: #464d65;
+    color: gray;
     background: none;
     border-radius: 5px;
     text-transform: capitalize;
