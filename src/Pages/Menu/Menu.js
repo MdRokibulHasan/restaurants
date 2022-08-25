@@ -13,7 +13,7 @@ const Menu = () => {
         <div className="row no-gutter justify-content-center">
           <div className="cl-xl-7 col-lg-8 col-md-10">
             <div className="section-title text-center">
-              <span>Our Offerd Menu</span>
+              <span className="menu-subtitle">Our Offerd Menu</span>
               <h2>Some Trendy And Popular Courses Offerd</h2>
             </div>
           </div>

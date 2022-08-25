@@ -4,8 +4,14 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.menu-subtitle{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 .section-title{
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 .nav .nav-item a{
     text-decoration: none;
@@ -33,3 +39,6 @@ margin:50px 0;
 .container .row{
     --bs-gutter-x:0 !important
 }
+
+
+

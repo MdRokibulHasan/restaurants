@@ -2,12 +2,12 @@ import React from "react";
 import "./BookNow.css";
 const BookNow = () => {
   return (
-    <div className="booking-area section-bg">
+    <div className="booking-area section-bg" style={{ height: "550px" }}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-7 col-lg-8 col-md-10">
             <div className="section-title text-center">
-              <h2>Book A Table</h2>
+              <h2 className="book-now-table">Book A Table</h2>
             </div>
           </div>
         </div>
