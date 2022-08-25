@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
@@ -19,7 +18,9 @@ function App() {
   return (
     <div>
       <AuthProvider>
-        <Navbar></Navbar>
+        <div className="position-fixed top-0 w-100">
+          <Navbar />
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

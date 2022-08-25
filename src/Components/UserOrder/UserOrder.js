@@ -16,9 +16,10 @@ const UserOrder = () => {
           <tr>
             <th scope="col">#</th>
             <th scope="col">Name</th>
-            <th scope="col">Quantity</th>
+
             <th scope="col">Phone</th>
             <th scope="col">Address</th>
+            <th scope="col">Quantity</th>
             <th scope="col">Price</th>
             <th scope="col">Action</th>
           </tr>

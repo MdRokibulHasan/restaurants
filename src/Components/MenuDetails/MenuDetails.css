@@ -15,4 +15,10 @@
 .info form input{
     width: 150%;
     margin: 10px;
+    padding: 11px;
+    border-radius: 18px;
+
+}
+.card{
+border-radius: 15px !important;
 }

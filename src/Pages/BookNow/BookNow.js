@@ -54,6 +54,7 @@ const BookNow = () => {
                         placeholder="Date"
                         datatype="datepicker"
                         role="input"
+                        type="date"
                       ></input>
                     </div>
                   </div>
@@ -67,6 +68,7 @@ const BookNow = () => {
                         placeholder="Time"
                         datatype="datepicker"
                         role="input"
+                        type="time"
                       ></input>
                     </div>
                   </div>

@@ -1,5 +1,5 @@
 .main-header{
-  padding: 0 100px;
+  padding: 0 0px;
   
 }
 .navbar-nav {
@@ -9,7 +9,7 @@
   }
   
   .nav-item a {
-    font-size: 15px;
+    font-size: 18px;
     margin: 10px;
     color: #081828;
     display: inline-flex;
@@ -29,16 +29,17 @@
   }
   
   .appointment-btn {
-    border: 1px solid #ff5600;
+    border: 1px solid gray;
     color: #464d65;
     background: none;
     border-radius: 5px;
     text-transform: capitalize;
-    padding: 19px 47px;
+    padding: 8px;
+    margin: 10px;
     -moz-user-select: none;
     cursor: pointer;
     display: inline-block;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: 0;
@@ -46,7 +47,7 @@
     transition: color 0.4s linear;
     position: relative;
     overflow: hidden;
-    margin: 0;
+    /* margin: 0; */
 
   }
   

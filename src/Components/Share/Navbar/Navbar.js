@@ -7,7 +7,7 @@ const Navbar = () => {
   const { user, logOut } = useAuth();
   return (
     <div className="main-header">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
           <div className="logo">
             <Link className="navbar-brand" to="/">
@@ -62,7 +62,7 @@ const Navbar = () => {
 
               <li className="nav-item">
                 {user?.email ? (
-                  <button onClick={logOut} className="appointment-btn">
+                  <button type="button" onClick={logOut} className="appointment-btn">
                     LogOut{" "}
                   </button>
                 ) : (
@@ -74,7 +74,7 @@ const Navbar = () => {
             </ul>
             <div>
               <Link to={"/showmenu"}>
-                <button type="button" className="appointment-btn">
+                <button type="button" className="appointment-btn text-center">
                   Order Now
                 </button>
               </Link>

@@ -31,42 +31,26 @@ const MenuDetails = () => {
       setSpecificDetail(matchedData);
     }
   }, [details]);
-  // order post server
-  // console.log(specificDetail);
-  // const { name, price } = specificDetail[0];
-  // console.log(specificDetail);
 
   function submit(e) {
     e.preventDefault();
+
     const payload = {
-      // address: data.address,
-      // phone: data.phone,
-      // quantity: data.quantity,
-      // price: specificDetail.price,
-      // name: specificDetail.name,
       ...data,
       name: specificDetail[0].name,
       price: specificDetail[0].price,
     };
-    console.log(payload);
+
     Http.post("order", payload).then((res) => {
-      console.log(res.data);
       e.target.value = "";
     });
-
-    // Axios.post("http://localhost:5000/order", {
-    //   address: data.address,
-    //   phone: data.phone,
-    //   quantity: data.quantity,
-    // }).then((res) => {
-    //   console.log(res.data);
-    // });
   }
 
   function handel(e) {
     const newData = { ...data };
     newData[e.target.id] = e.target.value;
     setData(newData);
+
     e.target.value = "";
   }
 
@@ -75,10 +59,10 @@ const MenuDetails = () => {
       <div className="container">
         <div className="row m-5 align-items-center">
           {specificDetail?.map((pd) => (
-            <div className="col-md-7">
+            <div className="col-xl-7 col-md-7 col-12">
               <div>
                 <div class="card ">
-                  <img src={pd.image} class="card-img-top" alt="Image" height="400px" />
+                  <img src={pd.image} class="card-img-top" alt="Image" max-height="400px" />
                   <div class="card-body">
                     <div className="d-flex justify-content-between">
                       <div className="">
@@ -89,7 +73,7 @@ const MenuDetails = () => {
                       </div>
                     </div>
                     <div>
-                      <span> Price </span> <span> {pd.price} tk </span>
+                      <span> Price: </span> <span> {pd.price} tk </span>
                     </div>
 
                     <div>
@@ -98,10 +82,19 @@ const MenuDetails = () => {
                   </div>
                 </div>
               </div>
+              {/* <div className="input-group">
+                <button type="button" className="input-group-text">
+                  -
+                </button>
+                <div className="form-control text-center">{data.quantity}</div>
+                <button type="button" className="input-group-text">
+                  +
+                </button>
+              </div> */}
             </div>
           ))}
 
-          <div className="col-md-5">
+          <div className="col-xl-5 col-md-5 col-12">
             {/* Buy food  */}
 
             <div className="info">
@@ -118,6 +111,7 @@ const MenuDetails = () => {
                 <input onChange={(e) => handel(e)} id="address" value={data.address} type="text" placeholder="Address" />
                 <input onChange={(e) => handel(e)} id="phone" value={data.phone} type="number" placeholder="Phone" />
                 <input onChange={(e) => handel(e)} id="quantity" value={data.quantity} type="number" placeholder="Quantity" />
+
                 {/* <input onChange={(e) => handel(e)} id="price" value={data.quantity} type="number" placeholder="Price" /> */}
                 <input type="submit" />
               </form>
